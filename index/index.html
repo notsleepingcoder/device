@@ -7,6 +7,8 @@
   </head>
   <body>
     <header>
+      <h1 class="visually-hidden">Device. Магазин электроники</h1>
+      <!-- потом добавить стиль visually-hidden, чтобы скрыть -->
       <nav>
         <a href="#">
           <img src="img\navigation\logo.png" width="163" height="35"
@@ -92,27 +94,160 @@
       </section>
 
       <section>
-        <p>Доставка</p>
+        <h2>Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>
           подъезду совершенно бесплатно! Ведь мы неплохо <br>
           заработаем, поднимая его на ваш этаж.</p>
       </section>
       <section>
-        <p>Гарантия</p>
+        <h2>Гарантия</h2>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит  <br>
           дом — не переживайте, мы выдадим вам новый. <br>
           Товар, не дом, конечно же.</p>
       </section>
       <section>
-        <p>Кредит</p>
+        <h2>Кредит</h2>
         <p>Залезть в долговую яму стало проще! Кредитные <br>
           консультанты подберут для вас наиболее выгодные <br>
           условия кредита. Выгодные для нашего банка, разумеется.</p>
       </section>
 
       <section>
-        <p></p>
+        <h2>О нас</h2>
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика,<br>
+          который есть в каждом из нас.
+         </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки <br>
+          России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <button type="button" name="button">Подробнее о нас</button>
+      </section>
+
+      <section>
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <button type="button" name="button">Напишите нам</button>
       </section>
     </main>
+
+    <footer>
+      <img src="img\footer\logo.png" alt="Логотип магазина электроники Device"
+      width="163px" height="35px">
+      <ul>
+        <li> <button type="button">Войти</button> </li>
+        <li> <button type="button">Сравнить</button> </li>
+        <li> <button type="button">Корзина</button> </li>
+      </ul>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <ul>
+        <li> <a href="#">Доставка</a> </li>
+        <li> <a href="#">Гарантия</a> </li>
+        <li> <a href="#">Контакты</a> </li>
+      </ul>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <ul>
+        <li> <a href="#">Фейсбук</a> </li>
+        <li> <a href="#">Инстаграм</a> </li>
+        <li> <a href="#">Твиттер</a> </li>
+      </ul>
+      <img src="img\footer\logo-html.png" alt="Логотип HTML Academy"
+      width="27px" height="35px">
+    </footer>
   </body>
 </html>
+
+
+
+<!-- ФОРМА ДЛЯ ВВОДА ЛОГИНА И ПАРОЛЯ
+<body>
+  <h1>Логин</h1>
+  <form class="user" action="index.html" method="post">
+    <p>
+      <label for="user-login">Логин</label>
+      <input id="user-login" type="text"
+      name="login" placeholder="Логин">
+    </p>
+    <p>
+      <label for="user-password">Логин</label>
+      <input id="user-password" type="text"
+      name="password" placeholder="Пароль">
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="remember">
+        Запомнить меня
+      </label>
+    </p>
+    <button type="submit">Войти</button>
+  </form>
+</body>
+
+
+<body>
+  <h1>Каталог</h1>
+  <form class="filter" method="get" action="">
+    <fieldset>
+      <legend>Производители:</legend>
+      <ul>
+        <li>
+          <input type="checkbox" name="first-criterion"
+          id="filter-first-criterion" checked>
+          <label for="filter-first-criterion">
+            Первый критерий
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" name="second-criterion"
+          id="filter-second-criterion">
+          <label for="filter-second-criterion">
+            Второй критерий
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" name="third-criterion"
+          id="filter-third-criterion">
+          <label for="filter-third-criterion">
+            Третий критерий
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Группы товаров:</legend>
+      <ul>
+        <li>
+          <input type="radio" name="one-criterion"
+          id="radio-first-criterion" value="value1">
+          <label for="radio-first-criterion">
+            Первый критерий
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="one-criterion"
+          id="radio-second-criterion" value="value2">
+          <label for="radio-second-criterion">
+            Второй критерий
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="one-criterion"
+          id="radio-third-criterion" value="value3">
+          <label for="radio-third-criterion">
+            Третий критерий
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit">Показать</button>
+  </form>
+</body> -->
