@@ -8,7 +8,6 @@
   <body>
     <header>
       <h1 class="visually-hidden">Device. Магазин электроники</h1>
-      <!-- потом добавить стиль visually-hidden, чтобы скрыть -->
       <nav>
         <a href="#">
           <img src="img\navigation\logo.png" width="163" height="35"
@@ -16,7 +15,7 @@
         </a>
         <ul>
           <li><input type="Поиск"></li>
-          <li> <button type="button">Войти</button> </li>
+          <li> <a href="login.html">Войти</a> </li>
           <li> <button type="button">Сравнить</button> </li>
           <li> <button type="button">Корзина</button> </li>
         </ul>
@@ -30,6 +29,8 @@
     </header>
     <main>
       <article>
+        <img src="img\index\slide1\slider-1.png"
+        alt="Палка для селфи" width="384px" height="486px">
         <p>Делай селфи как Бен Стиллер!</p>
         <span>Самая длинная палка для селфи доступна в нашем магазине. <br>
 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</span>
@@ -51,6 +52,8 @@
       </article>
 
       <article>
+        <img src="img\index\slide2\slider-2.png"
+        alt="Фитнес часы" width="384px" height="486px">
         <p>Худеем <br>
           правильно!</p>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
@@ -65,6 +68,8 @@
       </article>
 
       <article>
+        <img src="img\index\slide3\slider-3.png"
+        alt="Квадрокоптер с лазером" width="700px" height="486px">
         <p>Порхает как бабочка, <br>
           жалит как пчела!</p>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
@@ -192,7 +197,7 @@
   </form>
 </body>
 
-
+Форма для селекторов
 <body>
   <h1>Каталог</h1>
   <form class="filter" method="get" action="">
@@ -251,3 +256,35 @@
     <button type="submit">Показать</button>
   </form>
 </body> -->
+
+<main>
+  <section>
+    <h2>Записаться</h2>
+    <p>
+      Укажите желаемую дату и время и мы свяжемся с вами
+      для подтверждения брони
+    </p>
+    <form action="сервер" method="post">
+      <p>
+        Дата
+        <input type="date" name="date"
+        value="2022-10-27">
+      </p>
+      <p>
+        Время
+        <input type="time" name="time"
+        value="10:00">
+      </p>
+      <p>
+        Ваше имя
+        <input type="text" name="name" value=""
+        placeholder="Иван">
+      </p>
+      <p>
+        Телефон
+        <input type="tel" name="phone" value=""
+        placeholder="+7 (999) 999-99-99">
+      </p>
+    </form>
+  </section>
+</main>
